@@ -5,7 +5,7 @@ import usuarioRutes from './routes/usuarioRoutes.js'
 const app = express()
 
 //Routing
-app.get('/', usuarioRutes)
+app.use('/', usuarioRutes)
 
 
 

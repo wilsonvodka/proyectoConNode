@@ -1,0 +1,25 @@
+{
+  "name": "binenesraices_mvc",
+  "version": "1.0.0",
+  "description": "proyecto 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "MVC",
+    "PUG",
+    "MySQL",
+    "Tailwind",
+    "Sequenlize"
+  ],
+  "author": "wilson alexander",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

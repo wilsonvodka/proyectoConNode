@@ -1,7 +1,7 @@
 
 const formularioLogin = (req,res)=>{
     res.render('auth/login',{
-        autenticado: false
+        pagina: "Iniciar sesión"
     })
 }
 
@@ -10,8 +10,14 @@ const formularioRegristro = (req,res)=>{
         pagina: "Crear cuenta"
     })
 }
+const formularioOlvidePassword = (req,res)=>{
+    res.render('auth/olvide-password',{
+        pagina: "Recupera tu acceso a bienes raices"
+    })
+}
 
 export{
     formularioLogin,
-    formularioRegristro
+    formularioRegristro,
+    formularioOlvidePassword
 }

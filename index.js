@@ -1,12 +1,16 @@
 import express from 'express'
 import usuarioRutes from './routes/usuarioRoutes.js'
 
-//crear app
+//Crear app
 const app = express()
 
-//habilitar pug
+//Habilitar pug
 app.set('view engine', 'pug');
 app.set('views', './views');
+
+//Carpeta pública
+app.use(express.static('public'))
+
 
 //Routing
 app.use('/auth', usuarioRutes);
